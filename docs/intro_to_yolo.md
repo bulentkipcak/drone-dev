@@ -28,6 +28,14 @@ on Ubuntu 18.04 you may need to run
 catkin build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/gcc-6
 ```
 
+### BENİM BUİLD
+```
+chmod +x ~/catkin_ws/src/darknet_ros
+catkin build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/gcc-8
+catkin build darknet_ros -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/gcc-8
+catkin build darknet_ros
+```
+
 ## **Ubuntu 20.04**
 ```
 cd ~/catkin_ws/src
