@@ -8,6 +8,7 @@ In home directory:
 ```
 cd ~
 sudo apt install git
+sudo apt-get install gitk git-gui
 git clone https://github.com/ArduPilot/ardupilot.git
 cd ardupilot
 ```
@@ -32,10 +33,26 @@ git config --global url.https://.insteadOf git://
 git checkout Copter-4.0.4
 git submodule update --init --recursive
 ```
+## Install MAVProxy
+```
+sudo pip3 install future pymavlink MAVProxy
+```
+
+## Update bash
+```
+gedit ~/.bashrc
+export PATH=$PATH:$HOME/ardupilot/Tools/autotest
+export PATH=/usr/lib/ccache:$PATH
+. ~/.bashrc
+```
 
 Run SITL (Software In The Loop) once to set params:
 ```
-cd ~/ardupilot/ArduCopter
-sim_vehicle.py -w
+cd ~/ardupilot/Tools/autotest
+sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 ```
+
+
+
+
 
