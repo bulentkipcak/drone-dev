@@ -49,7 +49,7 @@ export PATH=/usr/lib/ccache:$PATH
 Run SITL (Software In The Loop) once to set params:
 ```
 cd ~/ardupilot/Tools/autotest
-sim_vehicle.py -v ArduCopter -f gazebo-iris --console
+sim_vehicle.py -v ArduCopter -f gazebo-iris --console --map
 ```
 
 
