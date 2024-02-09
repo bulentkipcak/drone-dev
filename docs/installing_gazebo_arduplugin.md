@@ -76,8 +76,8 @@ gazebo --verbose ~/ardupilot_gazebo/worlds/iris_arducopter_runway.world
 
 In another Terminal (Terminal 2), run SITL:
 ```
-cd ~/ardupilot/ArduCopter/
-sim_vehicle.py -v ArduCopter -f gazebo-iris --console
+cd ~/ardupilot/Tools/autotest
+sim_vehicle.py -v ArduCopter -f gazebo-iris --console --map
 ```
 
 
