@@ -41,6 +41,8 @@ rosinstall_generator mavlink | tee -a /tmp/mavros.rosinstall
 wstool merge -t src /tmp/mavros.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src --rosdistro `echo $ROS_DISTRO` -y
+!!! hata alirsan rosdep install --from-paths src --ignore-src
+!!! hata alirsan sudo apt-get install libgeographic-dev
 
 catkin build
 ```
