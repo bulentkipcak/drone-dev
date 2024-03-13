@@ -29,6 +29,13 @@ cd ~/catkin_ws
 catkin init
 ```
 
+If you have a catkin workspace and are building any code from source, your first step should always be
+```
+cd /your/catkin/workspace/root
+rosdep install --from-paths src --ignore-src
+This will automatically install all required binary dependencies for the packages in your workspace.
+```
+
 ## 3. Dependencies installation
 
 Install `mavros` and `mavlink` from source:
