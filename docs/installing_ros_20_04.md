@@ -33,8 +33,8 @@ If you have a catkin workspace and are building any code from source, your first
 ```
 cd /your/catkin/workspace/root
 rosdep install --from-paths src --ignore-src
-This will automatically install all required binary dependencies for the packages in your workspace.
 ```
+This will automatically install all required binary dependencies for the packages in your workspace.
 
 ## 3. Dependencies installation
 
